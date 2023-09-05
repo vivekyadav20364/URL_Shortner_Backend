@@ -4,6 +4,9 @@ const urlRouter=require('./routers/urlRouter');
 const connectDB=require('./connect');
 const URL =require("./models/dbmodel");
 const cors=require("cors");
+const dotenv=require('dotenv');
+dotenv.config();
+
 connectDB();
 app.use(cors());
 
